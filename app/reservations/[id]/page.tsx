@@ -44,6 +44,7 @@ interface Reservation {
     name: string;
     location: string;
   };
+  metadata?: any;
 }
 
 type ActionState = 'idle' | 'confirming' | 'releasing' | 'done';

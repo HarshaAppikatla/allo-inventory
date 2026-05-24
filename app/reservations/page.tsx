@@ -39,6 +39,7 @@ interface Reservation {
     name: string;
     location: string;
   };
+  metadata?: any;
 }
 
 export default function ReservationsListPage() {
