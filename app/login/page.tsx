@@ -129,18 +129,67 @@ export default function CustomerLoginPage() {
           </form>
 
           {/* Test Credentials Hint */}
-          <div className="mt-8 pt-6 border-t border-white/5 text-center">
-            <span className="text-[11px] font-medium text-white/30 uppercase tracking-wider block mb-3">
-              Test Credentials
+          <div className="mt-8 pt-6 border-t border-white/5">
+            <span className="text-[11px] font-medium text-white/30 uppercase tracking-wider block mb-4 text-center">
+              System Portals & Credentials
             </span>
-            <div className="inline-flex flex-col gap-1.5 p-3.5 rounded-xl bg-white/[0.01] border border-white/5 text-left w-full">
-              <div className="flex justify-between text-xs">
-                <span className="text-white/40 font-mono">Email:</span>
-                <span className="text-indigo-300 font-mono select-all">user@allohealth.com</span>
+            <div className="space-y-3">
+              {/* Storefront */}
+              <div className="p-3.5 rounded-xl bg-white/[0.01] border border-white/5">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-xs font-semibold text-indigo-400">Customer Storefront</span>
+                  <span className="text-[10px] text-white/40 bg-white/5 px-2 py-0.5 rounded-md font-mono">/login</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div>
+                    <span className="text-white/30 block text-[9px] uppercase tracking-wider">Email</span>
+                    <span className="text-indigo-200 font-mono select-all">user@allohealth.com</span>
+                  </div>
+                  <div>
+                    <span className="text-white/30 block text-[9px] uppercase tracking-wider">Password</span>
+                    <span className="text-white/80 font-mono select-all">user123</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex justify-between text-xs">
-                <span className="text-white/40 font-mono">Password:</span>
-                <span className="text-white/80 font-mono select-all">user123</span>
+
+              {/* Operations */}
+              <div className="p-3.5 rounded-xl bg-white/[0.01] border border-white/5 hover:border-violet-500/20 transition-all duration-200">
+                <div className="flex justify-between items-center mb-2">
+                  <a href="/operations/login" className="text-xs font-semibold text-violet-400 hover:text-violet-300 hover:underline flex items-center gap-1 transition-colors">
+                    Operations Portal <ArrowRight className="w-3 h-3" />
+                  </a>
+                  <span className="text-[10px] text-white/40 bg-white/5 px-2 py-0.5 rounded-md font-mono">/operations/login</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div>
+                    <span className="text-white/30 block text-[9px] uppercase tracking-wider">Email</span>
+                    <span className="text-violet-200 font-mono select-all">ops@allohealth.com</span>
+                  </div>
+                  <div>
+                    <span className="text-white/30 block text-[9px] uppercase tracking-wider">Password</span>
+                    <span className="text-white/80 font-mono select-all">ops123</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Admin */}
+              <div className="p-3.5 rounded-xl bg-white/[0.01] border border-white/5 hover:border-emerald-500/20 transition-all duration-200">
+                <div className="flex justify-between items-center mb-2">
+                  <a href="/admin/login" className="text-xs font-semibold text-emerald-400 hover:text-emerald-300 hover:underline flex items-center gap-1 transition-colors">
+                    Admin Dashboard <ArrowRight className="w-3 h-3" />
+                  </a>
+                  <span className="text-[10px] text-white/40 bg-white/5 px-2 py-0.5 rounded-md font-mono">/admin/login</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div>
+                    <span className="text-white/30 block text-[9px] uppercase tracking-wider">Email</span>
+                    <span className="text-emerald-200 font-mono select-all">admin@allohealth.com</span>
+                  </div>
+                  <div>
+                    <span className="text-white/30 block text-[9px] uppercase tracking-wider">Password</span>
+                    <span className="text-white/80 font-mono select-all">admin123</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
