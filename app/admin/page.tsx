@@ -188,6 +188,11 @@ interface AdminStats {
     dbQueryDurationMs: number;
     apiLatencyMs: number;
   };
+  revenue: {
+    totalRevenue: number;
+    dailyRevenue: number;
+    revenuePerWarehouse: Record<string, number>;
+  };
   systemStatus: {
     databaseConnected: boolean;
     cronActive: boolean;
