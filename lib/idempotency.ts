@@ -54,7 +54,7 @@ export async function storeIdempotencyRecord(
       create: {
         key,
         statusCode,
-        responseBody: responseBody as Record<string, unknown>,
+        responseBody: responseBody as any,
       },
     })
     .catch((err) => {
