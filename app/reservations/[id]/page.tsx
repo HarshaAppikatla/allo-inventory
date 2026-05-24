@@ -336,7 +336,13 @@ export default function ReservationPage() {
       }));
     }
 
-    const events = [
+    const events: Array<{
+      label: string;
+      timestamp: string | null;
+      description: string;
+      isCompleted: boolean;
+      type: 'created' | 'confirmed' | 'released' | 'expired' | 'pending';
+    }> = [
       {
         label: 'Reservation Created',
         timestamp: formatTimelineTime(reservation.createdAt),
